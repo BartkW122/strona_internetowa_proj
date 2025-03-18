@@ -1,0 +1,10 @@
+{
+"users":[
+    {"id":1,
+    "name":"nazwa",
+    "img":"sciezka do pliku z zdjeciem",
+    "bg_color":"blue",
+    "about":"cos tam"
+    }
+]
+}
