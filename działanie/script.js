@@ -13,7 +13,25 @@ fetch("dane.json")
         let rej_btn=document.querySelector('.rejestrowanie');
         let log_btn=document.querySelector('.logowanie');
 
-      console.log(form_log);
+        let sub_log_btn=document.querySelector('.sub_zal_btn')
+        let sub_rej_btn=document.querySelector('.sub_rej_btn')
+
+      //rej
+      let rej_name=document.querySelector('.rej_name')
+      let rej_email=document.querySelector('.rej_email')
+      let rej_pass=document.querySelector('.rej_pass')
+
+      //console.log(rej_name)
+
+      //log
+      let log_name=document.querySelector('.log_name')
+      let log_pass=document.querySelector('.log_pass')
+
+      //console.log(log_name)
+
+      //console.log(sub_log_btn)
+      //console.log(form_log);
+
         rej_btn.addEventListener("click",()=>{
           console.log('rej');
 
@@ -25,6 +43,7 @@ fetch("dane.json")
           }
 
         })
+
         log_btn.addEventListener("click",()=>{
           console.log('log');
 
@@ -36,6 +55,36 @@ fetch("dane.json")
           }
           
         })
+
+        sub_rej_btn.addEventListener("click",item=>{
+          item.preventDefault()
+          
+          //walidacja danych
+          if(rej_name.value==""||rej_email.value==""||rej_pass.value==""){
+            alert('wypelnij formularz!!')
+          }else{
+            
+            window.location.href = "index2.html";
+
+          }
+
+        })
+
+        sub_log_btn.addEventListener("click",item=>{
+          item.preventDefault()
+
+           //walidacja danych
+          if(log_name.value==""||log_pass.value==""){
+            alert('wypelnij formularz!!')
+          }else{
+            
+            window.location.href = "index2.html";
+
+          }
+        })
+        
+        // console.log(element)
+        // alert('witaj!!')
     });
 
   })

@@ -1,6 +1,7 @@
 {
 "users":[
-    {"id":1,
+    {
+    "id":1,
     "name":"nazwa",
     "img":"sciezka do pliku z zdjeciem",
     "bg_color":"blue",
